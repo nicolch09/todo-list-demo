@@ -21,11 +21,15 @@ export default class TodoWrapper extends Component {
     }
   };
 
+    patchStatus = todo => {
+        this.props.patchStatus(todo);
+    }
+
   render() {
     return (
       <div className="todo-wrapper">
         <TodoInput onNewTodoAdded={this.addNewTodo}/>
-        <Todos todos={this.props.todos}/>
+          <Todos todos={this.props.todos} patchStatus={this.patchStatus}/>
       </div>
     )
   }

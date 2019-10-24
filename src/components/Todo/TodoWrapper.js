@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import TodoInput from './TodoInput'
 import Todos from './Todos'
-import "./Todo.css"
 import TodoResource from '../../api/TodoResource';
 
 export default class TodoWrapper extends Component {

@@ -12,7 +12,7 @@ export default class Todos extends Component {
     return (
       <div className="todo-list">
         {todos.map((todo, i) =>
-          <li style = {{"list-style": "none"}} key={i}>
+          <li style = {{listStyle: "none"}} key={i}>
            <TodoItem
              todo={todo}
              onChange={this.changeStatus}/>

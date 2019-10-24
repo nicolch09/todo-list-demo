@@ -15,7 +15,7 @@ export default {
         mode: 'cors',
         method: 'PATCH',
         body: JSON.stringify({
-            "status" : "completed"
+            "status" : todo.status
         }),
         headers: new Headers({ 'Content-Type': 'application/json'})
     })
